@@ -1,0 +1,175 @@
+
+body{
+    margin: 0px;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #83C5BE;
+    min-height: 40px;
+}
+
+header img{
+    max-width:35px;
+    max-height: 35px;
+}
+
+header a{
+    color:#000000; 
+    text-decoration:none;
+    font-family: "Oldenburg", serif;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #83C5BE;
+    padding-top: 10px;
+}
+
+footer img{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.picture{
+    background-color:#EDF6F9;
+}
+
+.picture img{
+    width: 100%;
+    height: 100%;
+}
+
+.story{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #FFDDD2;
+
+}
+
+.story img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.story .intro{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.intro{
+    display: flex;        
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.intro h2{
+    font-family: "Oldenburg", serif;
+    margin: 10px;
+    align-self: center;
+}
+
+.intro p{
+    font-family: "Alef", sans-serif;
+    margin:10px;
+    align-self: center;
+}
+
+.intro button{
+    align-self: center;
+    background-color:#EDF6F9;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: #E29578;
+    font-weight: bold;
+    border-radius: 10px;
+    border-width: 3px;
+    transition: all 300ms;
+}
+
+.intro button:hover{
+    cursor: pointer;
+    background-color: #83C5BE;
+    color:#EDF6F9;
+}
+
+.joinus{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #EDF6F9;
+}
+
+.joinus img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.joinus intro{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+
+@media screen and (min-width: 768px) {
+    .story{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        background-color:#FFDDD2;
+    
+    }
+
+
+    .story img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .story .intro{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .joinus{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        background-color: #EDF6F9;
+    }
+    
+    .joinus img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .joinus intro{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+  
+}
